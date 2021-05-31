@@ -21,7 +21,7 @@ let romance = [
 ];
 let advice = [
   'Problems, particularly work or health-related, can more easily be solved today, and you seem to have the tools to handle tricky areas.',
-  'You may not always feel understood right now so that working at your own pace would be best.',
+  'You may not always feel understood right now, so working at your own pace would be best.',
   'Expressing yourself and sharing your ideas can be satisfying. Today, bringing ideas to life can be in focus.',
   'You are in an excellent position to share ideas with people you care about, and you can be quite impressive to others now.',
   'Money matters and questions of ownership can be tricky issues, needing careful handling. This can stir up doubts about a person in your life. Consider that decisions made under pressure will not serve you well, so aim to find a place of calm before you jump into anything.'
