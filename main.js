@@ -1,10 +1,6 @@
-//A Text Generator that returns a random message every time it is called.
+//A horoscope generator that returns random woowoo any time the function is called
 
-// Arrays with Message options (Need at least 3)
-/* List of fortunes
-Be on the lookout for coming events; They cast their shadows beforehand.
-The man on the top of the mountain did not fall there.
- */
+// Arrays with horoscope components
 let planet = [
   'The Moon spends the day in your creative sector, and you readily find the inspiration to share your ideas and creations.',
   "With the Moon in your home and family sector all day, you gravitate to easygoing or familiar activities.",
@@ -33,8 +29,8 @@ let outro = [
   'You may naturally gravitate towards unusual and wonderful ideas and things. You might also get a stronger clue as to where you are headed in a larger sense through the events or feelings of the day.',
   "Be open to the possibilities that are offered to you today, because you're sitting on a treasure-trove of opportunity for growth and passionate expansion."
 ];
-// Function to return random Message, using Math.random();
 
+// Function to return random Message, using Math.random()
 let horoscopeGenerator = () => {
   let message = '';
   let a = planet[(Math.floor((Math.random() * (planet.length))))];
@@ -44,4 +40,5 @@ let horoscopeGenerator = () => {
   return `${a} ${b} ${c} ${d}`
 };
 
+//Call & Log Function to console
 console.log(horoscopeGenerator());
