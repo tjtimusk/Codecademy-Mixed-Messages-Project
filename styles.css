@@ -1,0 +1,24 @@
+:root {}
+
+body {
+  background: url('Media/background.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Helvetica', monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, .70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 4s linear 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
+}

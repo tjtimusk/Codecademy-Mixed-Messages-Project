@@ -1,5 +1,7 @@
 //A horoscope generator that returns random woowoo any time the function is called
-
+// Page elements
+let fortune = document.querySelector('.fortune');
+let button = document.querySelector('.generator');
 // Arrays with horoscope components
 let planet = [
   'The Moon spends the day in your creative sector, and you readily find the inspiration to share your ideas and creations.',
@@ -31,14 +33,20 @@ let outro = [
 ];
 
 // Function to return random Message, using Math.random()
-let horoscopeGenerator = () => {
+let fortuneGenerator = () => {
+
   let message = '';
   let a = planet[(Math.floor((Math.random() * (planet.length))))];
   let b = romance[(Math.floor((Math.random() * (romance.length))))];
   let c = advice[(Math.floor((Math.random() * (advice.length))))];
   let d = outro[(Math.floor((Math.random() * (outro.length))))];
-  return `${a} ${b} ${c} ${d}`
+  //return `${a} ${b} ${c} ${d}`
+  fortune.textContent = `${a} ${b} ${c} ${d}`;
 };
 
-//Call & Log Function to console
-console.log(horoscopeGenerator());
+
+
+//Call Function
+button.addEventListener('click', () => {
+  fortuneGenerator()
+});
